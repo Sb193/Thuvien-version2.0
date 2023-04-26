@@ -1,0 +1,67 @@
+﻿@model QuanLyThuVien.Models.PhieuMuon
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PhieuMuon</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayMuon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayMuon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LuaChon1.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LuaChon1.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhanVien.Chucvu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhanVien.Chucvu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TheThuVien.MaDG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TheThuVien.MaDG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrangThai1.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrangThai1.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaPM }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

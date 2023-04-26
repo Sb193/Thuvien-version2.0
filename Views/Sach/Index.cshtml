@@ -1,0 +1,98 @@
+﻿@model IEnumerable<QuanLyThuVien.Models.Sach>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Quản lý sách</h2>
+
+<div class="card shadow mb-4 ">
+
+    <div class=" form-row card-header py-3 m-0">
+        <h6 class="m-0 font-weight-bold text-primary form-group col-sm-6 h4">Danh sách Sách</h6>
+        <div class="form-group col-sm-6 text-right justify-content-center">
+            <i class="fa fa-plus text-primary"></i>
+            @Html.ActionLink("Thêm sách", "Create", "Sach", null, new { @class = "m-0 font-weight-bold text-primary  text-decoration-none h5" })
+        </div>
+        
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Mã sách</th>
+                        <th>Tên sách</th>
+                        <th>Thể loại</th>
+                        <th>Tác giả</th>
+                        <th>Số lượng</th>
+                        <th>Số lượng thực</th>
+                        <th>Chức năng</th>
+
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Mã sách</th>
+                        <th>Tên sách</th>
+                        <th>Thể loại</th>
+                        <th>Tác giả</th>
+                        <th>Số lượng</th>
+                        <th>Số lượng thực</th>
+                        <th>Chức năng</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaSach)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenSach)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TheLoai.TenTL)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenTG)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SoLuong)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SoLuongTT)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.MaSach }) |
+
+                                @Html.ActionLink("Xóa", "Delete", new { id = item.MaSach })
+                            </td>
+                        </tr>
+                    }
+
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <!-- Page level plugins -->
+    @Scripts.Render("~/vendor/datatables/jquery.dataTables.min.js")
+    @Scripts.Render("~/vendor/datatables/dataTables.bootstrap4.min.js")
+
+    <!-- Page level custom scripts -->
+    @Scripts.Render("~/js/demo/datatables-demo.js")
+}
+

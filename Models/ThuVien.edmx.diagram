@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f2662efd7bf43cda2f050be81e55ddb" Name="Diagram1">
+        <EntityTypeShape EntityType="ThuVienModel.ChiTietPhieuMuon" Width="1.5" PointX="9.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.DocGia" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.LoaiDG" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.LoaiTK" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.LuaChon" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.Nguoi" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.NhanVien" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.PhieuMuon" Width="1.5" PointX="7.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.PhieuPhat" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.Sach" Width="1.5" PointX="7.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.TaiKhoan" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.TheLoai" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.TheThuVien" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThuVienModel.TrangThai" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <AssociationConnector Association="ThuVienModel.MaPM_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaSach_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.LoaiDG_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaDG_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaNguoi_FK2" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.LoaiTK_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.Luachon_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaNguoi1_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaNV_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.NhanVien_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaDG_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaPM_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.Trangthai_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ThuVienModel.MaTL_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
